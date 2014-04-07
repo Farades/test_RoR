@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+#attr_accessible in RoR 4
+gem 'protected_attributes'
