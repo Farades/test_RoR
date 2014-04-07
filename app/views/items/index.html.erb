@@ -1,0 +1,15 @@
+<h1>Все товары</h1>
+<p>
+Сортировка:
+<%= link_to "Новые сверху", items_path(order: "desc") %> |
+<%= link_to "Старые сверху", items_path(order: "asc") %>
+</p>
+<ul>
+ <% @items.each do |i| %>
+ <li>
+    <%= link_to i.name, i %>
+    <%= link_to "Удалить товар", item_path(i), method: :delete, data: { confirm: "Уверены?" } %>
+ </li>
+ <% end %>
+</ul>
+<%= will_paginate @items %>

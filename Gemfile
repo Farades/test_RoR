@@ -46,3 +46,6 @@ end
 
 #attr_accessible in RoR 4
 gem 'protected_attributes'
+
+#постраничный вывод
+gem 'will_paginate'
